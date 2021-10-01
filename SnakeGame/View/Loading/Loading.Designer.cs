@@ -1,7 +1,7 @@
 ﻿
 namespace SnakeGame
 {
-    partial class Form1
+    partial class Loading
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,13 +29,34 @@ namespace SnakeGame
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.ucLoading1 = new SnakeGame.View.Loading.UCLoading();
+            this.SuspendLayout();
+            // 
+            // ucLoading1
+            // 
+            this.ucLoading1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucLoading1.Location = new System.Drawing.Point(0, 0);
+            this.ucLoading1.Name = "ucLoading1";
+            this.ucLoading1.Size = new System.Drawing.Size(800, 500);
+            this.ucLoading1.TabIndex = 0;
+            // 
+            // Loading
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.ucLoading1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Loading";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Loading";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private View.Loading.UCLoading ucLoading1;
     }
 }
 
