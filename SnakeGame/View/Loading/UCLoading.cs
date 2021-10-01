@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SnakeGame.View.Game;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,6 +38,12 @@ namespace SnakeGame.View.Loading
                     timer1.Enabled = false;
                 }
             }
+        }
+
+        private void pictureSnake_Click(object sender, EventArgs e)
+        {
+            SnakePlay frmSnake = new SnakePlay();
+            frmSnake.Show();
         }
     }
 }

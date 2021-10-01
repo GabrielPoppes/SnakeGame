@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\Game\SnakePlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Game\SnakePlay.Designer.cs">
+      <DependentUpon>SnakePlay.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Loading\Loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,9 @@
     <Compile Include="View\Loading\UCLoading.Designer.cs">
       <DependentUpon>UCLoading.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Game\SnakePlay.resx">
+      <DependentUpon>SnakePlay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Loading\Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>

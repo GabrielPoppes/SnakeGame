@@ -100,13 +100,15 @@ namespace SnakeGame.View.Loading
             // 
             // pictureSnake
             // 
+            this.pictureSnake.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureSnake.Image = global::SnakeGame.Properties.Resources.snakeicon;
-            this.pictureSnake.Location = new System.Drawing.Point(238, 21);
+            this.pictureSnake.Location = new System.Drawing.Point(238, 80);
             this.pictureSnake.Name = "pictureSnake";
             this.pictureSnake.Size = new System.Drawing.Size(289, 198);
             this.pictureSnake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureSnake.TabIndex = 1;
             this.pictureSnake.TabStop = false;
+            this.pictureSnake.Click += new System.EventHandler(this.pictureSnake_Click);
             // 
             // timer1
             // 
@@ -117,10 +119,11 @@ namespace SnakeGame.View.Loading
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F);
-            this.label1.Location = new System.Drawing.Point(270, 222);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(255, 281);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 19);
+            this.label1.Size = new System.Drawing.Size(262, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Clique na cobra para entrar no jogo...";
             // 
