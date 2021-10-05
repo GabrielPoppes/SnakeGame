@@ -103,5 +103,29 @@
   <ItemGroup>
     <None Include="Resources\106270309.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeIco48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2703079_close_delete_exit_x_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\298889_x_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3204560_animal_domestic_pet_snake_wild_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cobra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\games.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
