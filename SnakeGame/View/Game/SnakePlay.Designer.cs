@@ -29,18 +29,24 @@ namespace SnakeGame.View.Game
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelButtonClosed = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.grid = new System.Windows.Forms.DataGridView();
+            this.session = new System.Windows.Forms.Timer(this.components);
+            this.btnGame = new System.Windows.Forms.Button();
             this.panelButtonClosed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
             // panelButtonClosed
             // 
             this.panelButtonClosed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.panelButtonClosed.Controls.Add(this.btnGame);
             this.panelButtonClosed.Controls.Add(this.pictureBox2);
             this.panelButtonClosed.Controls.Add(this.label1);
             this.panelButtonClosed.Controls.Add(this.pictureBox1);
@@ -55,7 +61,7 @@ namespace SnakeGame.View.Game
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(72, 24);
+            this.label1.Location = new System.Drawing.Point(72, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 21);
             this.label1.TabIndex = 1;
@@ -81,13 +87,53 @@ namespace SnakeGame.View.Game
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // grid
+            // 
+            this.grid.AllowUserToAddRows = false;
+            this.grid.AllowUserToDeleteRows = false;
+            this.grid.AllowUserToOrderColumns = true;
+            this.grid.AllowUserToResizeColumns = false;
+            this.grid.AllowUserToResizeRows = false;
+            this.grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(70)))), ((int)(((byte)(90)))));
+            this.grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.grid.ColumnHeadersVisible = false;
+            this.grid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid.Location = new System.Drawing.Point(0, 62);
+            this.grid.MultiSelect = false;
+            this.grid.Name = "grid";
+            this.grid.ReadOnly = true;
+            this.grid.RowHeadersVisible = false;
+            this.grid.Size = new System.Drawing.Size(1029, 659);
+            this.grid.TabIndex = 1;
+            this.grid.KeyUp += new System.Windows.Forms.KeyEventHandler(this.grid_KeyUp);
+            // 
+            // btnGame
+            // 
+            this.btnGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(24)))), ((int)(((byte)(40)))));
+            this.btnGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGame.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGame.ForeColor = System.Drawing.Color.White;
+            this.btnGame.Location = new System.Drawing.Point(770, 12);
+            this.btnGame.Name = "btnGame";
+            this.btnGame.Size = new System.Drawing.Size(163, 33);
+            this.btnGame.TabIndex = 3;
+            this.btnGame.Text = "INICIAR O JOGO";
+            this.btnGame.UseVisualStyleBackColor = false;
+            // 
             // SnakePlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 721);
+            this.Controls.Add(this.grid);
             this.Controls.Add(this.panelButtonClosed);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "SnakePlay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SnakeGame";
@@ -95,6 +141,7 @@ namespace SnakeGame.View.Game
             this.panelButtonClosed.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -105,5 +152,8 @@ namespace SnakeGame.View.Game
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.DataGridView grid;
+        private System.Windows.Forms.Button btnGame;
+        private System.Windows.Forms.Timer session;
     }
 }
