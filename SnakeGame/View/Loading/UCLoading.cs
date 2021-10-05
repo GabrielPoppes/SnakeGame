@@ -23,6 +23,7 @@ namespace SnakeGame.View.Loading
             panelPurple.Size = new Size(panelPurple.Size.Width, 30);
         }
 
+        #region Timer para transação dos panels
         int panelPurple_y = 30; int waiter = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -39,11 +40,14 @@ namespace SnakeGame.View.Loading
                 }
             }
         }
+        #endregion
 
+        #region Evento click no PictureBox da cobra para abrir o jogo
         private void pictureSnake_Click(object sender, EventArgs e)
         {
             SnakePlay frmSnake = new SnakePlay();
             frmSnake.Show();
         }
+        #endregion
     }
 }
