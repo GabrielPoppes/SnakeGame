@@ -65,6 +65,12 @@
     <Compile Include="View\Loading\UCLoading.Designer.cs">
       <DependentUpon>UCLoading.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Rules\RulesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Rules\RulesView.Designer.cs">
+      <DependentUpon>RulesView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\Game\SnakePlay.resx">
       <DependentUpon>SnakePlay.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +89,9 @@
     </Compile>
     <EmbeddedResource Include="View\Loading\UCLoading.resx">
       <DependentUpon>UCLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Rules\RulesView.resx">
+      <DependentUpon>RulesView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,6 +135,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\games.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eu sei que você conhece as regras padrões do jogo da cobra, mas este não é jogo para raciocínios lógicos comuns....png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eu sei que você conhece as regras padrões do jogo da cobra, mas este não é jogo para raciocínios lógicos comuns... %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eu sei que você conhece as regras padrões do jogo da cobra, mas este não é jogo para raciocínios lógicos comuns... %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eu sei que você conhece as regras padrões do jogo da cobra, mas este não é jogo para raciocínios lógicos comuns... %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

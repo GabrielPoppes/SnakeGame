@@ -123,6 +123,50 @@ namespace SnakeGame.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Eu_sei_que_você_conhece_as_regras_padrões_do_jogo_da_cobra__mas_este_não_é_jogo_para_raciocínios_lógicos_comuns___ {
+            get {
+                object obj = ResourceManager.GetObject("Eu sei que você conhece as regras padrões do jogo da cobra, mas este não é jogo p" +
+                        "ara raciocínios lógicos comuns...", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eu_sei_que_você_conhece_as_regras_padrões_do_jogo_da_cobra__mas_este_não_é_jogo_para_raciocínios_lógicos_comuns_____1_ {
+            get {
+                object obj = ResourceManager.GetObject("Eu sei que você conhece as regras padrões do jogo da cobra, mas este não é jogo p" +
+                        "ara raciocínios lógicos comuns... (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eu_sei_que_você_conhece_as_regras_padrões_do_jogo_da_cobra__mas_este_não_é_jogo_para_raciocínios_lógicos_comuns_____2_ {
+            get {
+                object obj = ResourceManager.GetObject("Eu sei que você conhece as regras padrões do jogo da cobra, mas este não é jogo p" +
+                        "ara raciocínios lógicos comuns... (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Eu_sei_que_você_conhece_as_regras_padrões_do_jogo_da_cobra__mas_este_não_é_jogo_para_raciocínios_lógicos_comuns__1 {
+            get {
+                object obj = ResourceManager.GetObject("Eu sei que você conhece as regras padrões do jogo da cobra, mas este não é jogo p" +
+                        "ara raciocínios lógicos comuns..1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap games {
             get {
                 object obj = ResourceManager.GetObject("games", resourceCulture);
